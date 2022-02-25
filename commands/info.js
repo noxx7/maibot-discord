@@ -10,10 +10,10 @@ module.exports = {
         let botEmbed = new MessageEmbed()
         
            .setColor('#808080')
-           .setTitle('about i18n')
-           .addField('Name', 'Sakurajima i18n')
+           .setTitle('about mai')
+           .addField('Name', 'Sakurajima mai')
            .addField('Birthday', '02 December')
-           .addField('Status', 'this bot is still on beta!')
+           .addField('Status', 'still on progress')
            .addField('Owner', 'noxx#3349')
            .setFooter('beta release | noxx#3349')
         

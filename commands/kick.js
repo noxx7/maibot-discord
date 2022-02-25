@@ -7,7 +7,7 @@ module.exports = {
     description: i18n.__("kick.description"),
     execute (message, args) {
 
-        if (message.content.startsWith("!i18n kick")) {
+        if (message.content.startsWith("!mai kick")) {
             
           if (!message.member.hasPermission('KICK_MEMBERS')) return message.reply('you dont have permission to do that')
   
@@ -23,7 +23,7 @@ module.exports = {
  
           let botEmbed = new MessageEmbed()
 
-             .setAuthor(`KICKED ${member.user.tag}`)
+             .setAuthor(`MEMBER KICKED`)
              .setColor("#FF0000")
              .addField("Name", member)
              .addField("Reason", reason)

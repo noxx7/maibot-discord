@@ -29,7 +29,7 @@
 		"errorNotQueue": "There is nothing playing.",
 		"embedTitle": "Now playing",
 		"live": " ◉ LIVE",
-		"timeRei18nning": "Time Rei18nning: {time}"
+		"timeRemaining": "Time Remaining: {time}"
 	},
 	"pause": {
 		"description": "Pause Music",
@@ -51,13 +51,13 @@
 		"cantJoinChannel": "Could not join the channel: {error}",
 		"queueEnded": "Music queue ended.",
 		"queueError": "Error: {error}",
-		"startedPlaying": "🎶Started playing: **{title}** {url}",
+		"startedPlaying": "Started playing: **{title}** ",
 		"skipSong": "<@{author}> ⏩ skipped the song",
 		"pauseSong": "<@{author}> ⏸ paused the music.",
 		"resumeSong": "<@{author}> ▶ resumed the music!",
 		"loopSong": "<@{author}> Loop is now {loop}",
 		"stopSong": "<@{author}> ⏹ stopped the music!",
-		"leaveChannel": "i18n is leaving the voice channel....",
+		"leaveChannel": "mai is leaving the voice channel....",
 		"songNotFound": "Audio Not Found"
 	},
 	"playlist": {
@@ -129,7 +129,7 @@
 		"result": "<@{author}> ⏹ stopped the music!"
 	},
 	"uptime": {
-		"description": "i18n uptime",
+		"description": "mai uptime",
 		"result": "Uptime: `{days} day(s),{hours} hours, {minutes} minutes, {seconds} seconds`"
 	},
 	"volume": {
@@ -151,7 +151,7 @@
 		"errorCommand": "looks like there is a problem."
 	},
 	"info": {
-		"description": "about i18n"
+		"description": "about mai"
 	},
 	"pp": {
 		"description": "show size of your pp"
@@ -166,7 +166,7 @@
 		"description": "unban member"
 	},
 	"random talk": {
-		"description": "i18n sending random word"
+		"description": "mai sending random word"
 	},
 	"random": {
 		"talk": {

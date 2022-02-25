@@ -21,7 +21,7 @@ module.exports = {
 
           let botEmbed = new MessageEmbed()
  
-            .setAuthor(`BANNED`)
+            .setAuthor(`MEMBER BANNED`)
             .setColor("#FF0000")
             .addField("Name", member)
             .addField("Reason", reason)
