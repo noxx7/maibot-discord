@@ -2,7 +2,7 @@
   "name": "i18nbot",
   "version": "1.0.0",
   "description": "noxx personal bot",
-  "i18nn": "index.js",
+  "main": "index.js",
   "author": "noxx#3349",
   "dependencies": {
     "@discordjs/opus": "^0.7.0",
