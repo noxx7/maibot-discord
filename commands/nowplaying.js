@@ -30,7 +30,7 @@ module.exports = {
         false
       );
       nowPlaying.setFooter(
-        i18n.__mf("nowplaying.timeRei18nning", { time: new Date(left * 1000).toISOString().substr(11, 8) })
+        i18n.__mf("nowplaying.timeRemaining", { time: new Date(left * 1000).toISOString().substr(11, 8) })
       );
     }
 
