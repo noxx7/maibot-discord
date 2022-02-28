@@ -7,7 +7,7 @@ module.exports = {
   execute(message) {
     const queue = message.client.queue.get(message.guild.id);
 
-    if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('you dont have permission to do that');
+    if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('maaf kamu tidak bisa menggunakan command ini');
 
   
     if (!queue) return message.reply(i18n.__("stop.errorNotQueue")).catch(console.error);
