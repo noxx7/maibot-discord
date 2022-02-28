@@ -1,23 +1,18 @@
 const i18n = require("../util/i18n");
 
 module.exports = {
-    name: 'pee pee size',
-    aliases: ["pp"],
-    description: i18n.__("pp.description"),
+    name: 'talk',
+    aliases: ["t"],
+    description: i18n.__("talk.description"),
     execute(message, args) {
         var phrases = [
-            'Ɛ============>',
-            'Ɛ===========>',
-            'Ɛ==========>',
-            'Ɛ=========>',
-            'Ɛ========>',
+            'follow ig @_noxx7',
+            'turu dek',
+            'ingfo soe',
+            'okoklh',
+            'sipaling',
             'Ɛ=======>',
-            'Ɛ======>',
-            'Ɛ=====>',
-            'Ɛ====>',
-            'Ɛ===>',
-            'Ɛ==>',
-            'Ɛ=>',  
+            'tru kh',
         ];
 
         return message.reply(phrases[Math.floor(Math.random()*phrases.length)]);
