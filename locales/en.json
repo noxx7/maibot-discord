@@ -153,8 +153,8 @@
 	"info": {
 		"description": "about mai"
 	},
-	"pp": {
-		"description": "show size of your pp"
+	"talk": {
+		"description": "just mai sending random message"
 	},
 	"kick": {
 		"description": "kick member"
