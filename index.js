@@ -19,7 +19,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 client.on("ready", () => {
   console.log(`mai bot online!`);
-  client.user.setActivity(`${PREFIX} nox ganteng`, { type: "LISTENING" });
+  client.user.setActivity(`nox ganteng`, { type: "LISTENING" });
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
