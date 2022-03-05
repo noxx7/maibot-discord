@@ -12,7 +12,7 @@ module.exports = {
             const welcomeEmbed = new Discord.MessageEmbed()
                 .setColor('CYAN')
                 .setTitle('**' + member.user.username + '** joined the server **' + member.guild.memberCount + '** people')
-                .setImage(i18n.__('mai.jpg'))
+                .setImage(i18n.__('https://cdn.discordapp.com/attachments/731044950745284639/949506938163580968/1646450160128.png'))
 
             member.guild.channels.cache.find(i => i.name === 'Selamat Datang').send(WelcomeEmbed)
         })
