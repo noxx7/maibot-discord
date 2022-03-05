@@ -1,20 +1,19 @@
 const discord = require("discord.js");
-const { util } = require("simple-youtube-api");
+const { MessageEmbed } = require("discord.js");
 const i18n = require('../util/i18n');
+const Event = require('../events.js');
 
-module.exports = {
-    name: "autorole",
-    description: i18n.__("autorole.description"),
-    async execute(message, args) {
-        client.on('guildMemberAdd', member => {
-            member.roles.add(member.guild.roles.cache.find(c => c.name === 'welcome'))
+module.exports = new Event("guildMemberAdd", (client, member) => {
+    const channel = member.guild.channels.cache.find(c => c.name == "welcome");
+   
+    if (!channel) return;
 
-            const welcomeEmbed = new Discord.MessageEmbed()
-                .setColor('CYAN')
-                .setTitle('**' + member.user.username + '** joined the server **' + member.guild.memberCount + '** people')
-                .setImage(i18n.__('mai.jpg'))
+    let botEmbed = new MessageEmbed();
+    embed.setTitle("Selamat Datang")
+         .setAuthor(member.user.tag)
+         .setThumbnail(member.user.avatarURL({ dynamic: true}))
+         .setFooter(member.joinedAt.toUTCString())
+         .setTimestamp(member.joinedTimestamp)
 
-            member.guild.channels.cache.find(i => i.name === 'Selamat Datang').send(WelcomeEmbed)
-        })
-    }
-}
+    channel.send({ embeds: [embed] });
+});
