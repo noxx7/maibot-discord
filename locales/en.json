@@ -1,77 +1,77 @@
 {
 	"help": {
-		"description": "Display all commands and descriptions",
+		"description": "Menampilkam semua command",
 		"embedTitle": "mai commands",
-		"embedDescription": "List of all commands"
+		"embedDescription": "List command"
 	},
 	"invite": {
-		"description": "Send bot invite link"
+		"description": "mengirim link invit bot"
 	},
 	"loop": {
-		"description": "Toggle music loop",
-		"errorNotQueue": "There is nothing playing.",
-		"result": "Loop is now {loop}"
+		"description": "mengaktifkan loop",
+		"errorNotQueue": "tidak ada musik yang dimainkan",
+		"result": "Loop telah {loop}"
 	},
 	"lyrics": {
-		"description": "Get lyrics for the currently playing song",
-		"errorNotQueue": "There is nothing playing.",
-		"lyricsNotFound": "No lyrics found for {title}.",
+		"description": "menampilkan lirik dari musik yang dimainkan",
+		"errorNotQueue": "tidak ada musik yang dimaninkan",
+		"lyricsNotFound": "tidak ada lirik yang ditemukan untuk {title}.",
 		"embedTitle": "{title} - Lyrics"
 	},
 	"move": {
-		"description": "Move songs around in the queue",
-		"errorNotQueue": "There is no queue.",
-		"usagesReply": "Usage: {prefix}move <Queue Number>",
-		"result": "<@{author}> 🚚 moved **{title}** to {index} in the queue."
+		"description": "memindahkan lagu yang ada di queue",
+		"errorNotQueue": "tidak ada queue.",
+		"usagesReply": "penggunaan: {prefix}move <Queue Number>",
+		"result": "<@{author}> 🚚 memindahkan **{title}** ke {index} didalam queue."
 	},
 	"nowplaying": {
-		"description": "Show now playing song",
-		"errorNotQueue": "There is nothing playing.",
-		"embedTitle": "Now playing",
+		"description": "menampilkan lagu yang sedang dimainkan",
+		"errorNotQueue": "tidak ada lagu yang dimainkan.",
+		"embedTitle": "sekarang memainkan",
 		"live": " ◉ LIVE",
-		"timeRemaining": "Time Remaining: {time}"
+		"timeRemaining": "waktu yang tersisa: {time}"
 	},
 	"pause": {
 		"description": "Pause Music",
-		"errorNotQueue": "There is nothing playing.",
-		"result": "<@{author}> ⏸ paused the music."
+		"errorNotQueue": "tidak ada lagu yang dimainkan",
+		"result": "<@{author}> ⏸ paused music."
 	},
 	"ping": {
-		"description": "Show the bot's average ping",
+		"description": "menampilkan ping rata - rata bot",
 		"result": "{ping} ms"
 	},
 	"play": {
-		"description": "Plays audio from YouTube or Soundcloud",
-		"errorNotChannel": "enter a voice channel first!",
-		"errorNotInSameChannel": "You need to be in the same channel as {user}",
-		"usageReply": "Usage: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
-		"missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
-		"missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
-		"queueAdded": "✅ **{title}** has been added to the queue by <@{author}>",
-		"cantJoinChannel": "Could not join the channel: {error}",
-		"queueEnded": "Music queue ended.",
+		"description": "memainkan lagu dari soundcloud dan youtube",
+		"errorNotChannel": "kamu harus masuk ke voice channel terlebih dahulu!",
+		"errorNotInSameChannel": "kamu harus berada di channel yang sama dengan {user}",
+		"usageReply": "penggunaan: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
+		"missingPermissionConnect": "tidak bisa memasuki voice channel",
+		"missingPermissionSpeak": "tidak bisa mengaktifkan voice di channel ini!",
+		"queueAdded": "✅ **{title}** telah ditambahkan ke queue oleh @<{author}>",
+		"cantJoinChannel": "tidak bisa memasuki channel: {error}",
+		"queueEnded": "queue musik berakhir
 		"queueError": "Error: {error}",
-		"startedPlaying": "Started playing: **{title}** ",
+		"startedPlaying": "mulai memainkan **{title}**",
 		"skipSong": "<@{author}> ⏩ skipped the song",
 		"pauseSong": "<@{author}> ⏸ paused the music.",
 		"resumeSong": "<@{author}> ▶ resumed the music!",
 		"loopSong": "<@{author}> Loop is now {loop}",
 		"stopSong": "<@{author}> ⏹ stopped the music!",
-		"leaveChannel": "mai is leaving the voice channel....",
-		"songNotFound": "Audio Not Found"
+		"leaveChannel": "mai meninggalkan voice channel
+		"songNotFound": "audio tidak ditemukan"
 	},
 	"playlist": {
-		"description": "Play a playlist from youtube",
-		"usagesReply": "Usage: {prefix}playlist <YouTube Playlist URL | Playlist Name>",
-		"errorNotChannel": "You need to join a voice channel first!",
-		"errorNotInSameChannel": "You must be in the same channel as {user}",
-		"missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
-		"missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
-		"errorNotFoundPlaylist": "Playlist not found :(",
-		"fetchingPlaylist": "⌛ fetching the playlist...",
-		"playlistCharLimit": "\nPlaylist larger than character limit...",
-		"startedPlaylist": "<@{author}> Started a playlist",
-		"cantJoinChannel": "Could not join the channel: {error}"
+		"description": "memainkan sebuah playlist dari youtube"
+		"usagesReply": "penggunaan : {prefix}playlist <YouTube Playlist URL | Playlist Name>",
+		"errorNotChannel": "kamu harus masuk ke voice channel terlebih dahulu!",
+		"errorNotInSameChannel": "kamu harus berada di channel yang sama dengan {user}",
+		"missingPermissionConnect":  "tidak bisa memasuki voice channel",
+		"missingPermissionSpeak": "tidak bisa mengaktifkan voice di channel ini!",
+		"errorNotFoundPlaylist": "playlist tidak ditemukan
+		"fetchingPlaylist": "⌛ mengambil playlist"
+		"playlistCharLimit": "\nplaylist lebih besar dari limit karakter"
+		"startedPlaylist": "<@{author}> memulai sebuah playlist"
+		"cantJoinChannel": "tidak bisa memasuki channel: {error}"
 	},
 	"pruning": {
 		"description": "Toggle pruning of bot messages",
@@ -79,7 +79,7 @@
 		"result": "Message pruning is {result}"
 	},
 	"queue": {
-		"description": "Show the music queue and now playing.",
+		"description": "memperlihatkan queue dan lagu yang sedang dimainkan"
 		"missingPermissionMessage": "Missing permission to manage messages or add reactions",
 		"errorNotQueue": "❌ **Nothing playing in this server**",
 		"currentPage": "Current Page - ",
