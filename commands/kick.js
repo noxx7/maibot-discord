@@ -7,7 +7,7 @@ module.exports = {
     description: i18n.__("kick.description"),
     execute (message, args) {
 
-        if (message.content.startsWith("!m kick")) {
+        if (message.content.startsWith("!mai kick")) {
             
           if (!message.member.hasPermission('KICK_MEMBERS')) return message.reply('you dont have permission to do that')
   
