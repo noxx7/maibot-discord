@@ -10,7 +10,7 @@
   },
   "help": {
     "description": "Menampilkan semua perintah dan deskripsi",
-    "embedTitle": "{botname} Bantuan",
+    "embedTitle": "mai Bantuan",
     "embedDescription": "Daftar semua perintah"
   },
   "invite": {
