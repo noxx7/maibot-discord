@@ -1,0 +1,179 @@
+{
+	"help": {
+		"description": "Menampilkam semua command",
+		"embedTitle": "mai commands",
+		"embedDescription": "List command"
+	},
+	"invite": {
+		"description": "mengirim link invit bot"
+	},
+	"loop": {
+		"description": "mengaktifkan loop",
+		"errorNotQueue": "tidak ada musik yang dimainkan",
+		"result": "Loop telah {loop}"
+	},
+	"lyrics": {
+		"description": "menampilkan lirik dari musik yang dimainkan",
+		"errorNotQueue": "tidak ada musik yang dimaninkan",
+		"lyricsNotFound": "tidak ada lirik yang ditemukan untuk {title}.",
+		"embedTitle": "{title} - Lyrics"
+	},
+	"move": {
+		"description": "memindahkan lagu yang ada di queue",
+		"errorNotQueue": "tidak ada queue.",
+		"usagesReply": "penggunaan: {prefix}move <Queue Number>",
+		"result": "<@{author}> 🚚 memindahkan **{title}** ke {index} didalam queue."
+	},
+	"nowplaying": {
+		"description": "menampilkan lagu yang sedang dimainkan",
+		"errorNotQueue": "tidak ada lagu yang dimainkan.",
+		"embedTitle": "sekarang memainkan",
+		"live": " ◉ LIVE",
+		"timeRemaining": "waktu yang tersisa: {time}"
+	},
+	"pause": {
+		"description": "Pause Music",
+		"errorNotQueue": "tidak ada lagu yang dimainkan",
+		"result": "<@{author}> ⏸ paused music."
+	},
+	"ping": {
+		"description": "menampilkan ping rata - rata bot",
+		"result": "{ping} ms"
+	},
+	"play": {
+		"description": "memainkan lagu dari soundcloud dan youtube",
+		"errorNotChannel": "kamu harus masuk ke voice channel terlebih dahulu!",
+		"errorNotInSameChannel": "kamu harus berada di channel yang sama dengan {user}",
+		"usageReply": "penggunaan: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
+		"missingPermissionConnect": "tidak bisa memasuki voice channel",
+		"missingPermissionSpeak": "tidak bisa mengaktifkan voice di channel ini!",
+		"queueAdded": "✅ **{title}** telah ditambahkan ke queue oleh @<{author}>",
+		"cantJoinChannel": "tidak bisa memasuki channel: {error}",
+		"queueEnded": "queue musik berakhir",
+		"queueError": "Error: {error}",
+		"startedPlaying": "mulai memainkan **{title}**",
+		"skipSong": "<@{author}> ⏩ skipped the song",
+		"pauseSong": "<@{author}> ⏸ paused the music.",
+		"resumeSong": "<@{author}> ▶ resumed the music!",
+		"loopSong": "<@{author}> Loop is now {loop}",
+		"stopSong": "<@{author}> ⏹ stopped the music!",
+		"leaveChannel": "mai meninggalkan voice channel",
+		"songNotFound": "audio tidak ditemukan"
+	},
+	"playlist": {
+		"description": "memainkan sebuah playlist dari youtube",
+		"usagesReply": "penggunaan : {prefix}playlist <YouTube Playlist URL | Playlist Name>",
+		"errorNotChannel": "kamu harus masuk ke voice channel terlebih dahulu!",
+		"errorNotInSameChannel": "kamu harus berada di channel yang sama dengan {user}",
+		"missingPermissionConnect": "tidak bisa memasuki voice channel",
+		"missingPermissionSpeak": "tidak bisa mengaktifkan voice di channel ini!",
+		"errorNotFoundPlaylist": "playlist tidak ditemukan",
+		"fetchingPlaylist": "⌛ mengambil playlist",
+		"playlistCharLimit": "\nplaylist lebih besar dari limit karakter",
+		"startedPlaylist": "<@{author}> memulai sebuah playlist",
+		"cantJoinChannel": "tidak bisa memasuki channel: {error}"
+	},
+	"pruning": {
+		"description": "Toggle pruning of bot messages",
+		"errorWritingFile": "There was an error writing to the file.",
+		"result": "Message pruning is {result}"
+	},
+	"queue": {
+		"description": "memperlihatkan queue dan lagu yang sedang dimainkan",
+		"missingPermissionMessage": "Missing permission to manage messages or add reactions",
+		"errorNotQueue": "❌ **Nothing playing in this server**",
+		"currentPage": "Current Page - ",
+		"embedTitle": "Song Queue\n",
+		"embedCurrentSong": "**Current Song - [{title}]({url})**\n\n{info}"
+	},
+	"remove": {
+		"description": "menghapus lagu dari queue",
+		"errorNotQueue": "tidak ada queue.",
+		"usageReply": "penggunaan : {prefix}remove <Queue Number>",
+		"result": "<@{author}> ❌ menghapus **{title}** dari queue."
+	},
+	"resume": {
+		"description": "melanjutkan musik yang sedang dimainkan",
+		"errorNotQueue": "tidak ada musik yang dimainkan",
+		"resultNotPlaying": "<@{author}> ▶ melanjutkan musik",
+		"errorPlaying": "queue tidak di pause"
+	},
+	"search": {
+		"description": "mencari dan memilih video untuk dimainkan",
+		"usageReply": "penggunaan: {prefix}{name} <Video Name>",
+		"errorAlreadyCollector": "sebuah collector pesan telah aktif",
+		"errorNotChannel": "kamu harus memasuki voice channel terlebih dahulu",
+		"resultEmbedTitle": "**reply dengan nomor lagu yang ingin kamu mainkan**",
+		"resultEmbedDesc": "hasil untuk: {search}"
+	},
+	"shuffle": {
+		"description": "Shuffle queue",
+		"errorNotQueue": "There is no queue.",
+		"result": "<@{author}> 🔀 shuffled the queue"
+	},
+	"skip": {
+		"description": "Skip the currently playing song",
+		"errorNotQueue": "There is nothing playing that I could skip for you.",
+		"result": "<@{author}> ⏭ skipped the song"
+	},
+	"skipto": {
+		"description": "Skip to the selected queue number",
+		"usageReply": "Usage: {prefix}{name} <Queue Number>",
+		"errorNotQueue": "There is no queue.",
+		"errorNotValid": "The queue is only {length} songs long!",
+		"result": "<@{author}> ⏭ skipped {arg} songs"
+	},
+	"stop": {
+		"description": "Stops the music",
+		"errorNotQueue": "There is nothing playing.",
+		"result": "<@{author}> ⏹ stopped the music!"
+	},
+	"uptime": {
+		"description": "mai uptime",
+		"result": "Uptime: `{days} day(s),{hours} hours, {minutes} minutes, {seconds} seconds`"
+	},
+	"volume": {
+		"description": "Change volume of currently playing music",
+		"errorNotQueue": "There is nothing playing.",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"currentVolume": "🔊 The current volume is: **{volume}%**",
+		"errorNotNumber": "Please use a number to set volume.",
+		"errorNotValid": "Please use a number between 0 - 100.",
+		"result": "Volume set to: **{arg}%**"
+	},
+	"common": {
+		"on": "**on**",
+		"off": "**off**",
+		"enabled": "**enabled**",
+		"disabled": "**disabled**",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"cooldownMessage": "please wait {time} more second(s) before reusing the `{name}` command.",
+		"errorCommand": "looks like there is a problem."
+	},
+	"info": {
+		"description": "about mai"
+	},
+	"talk": {
+		"description": "just mai sending random message"
+	},
+	"kick": {
+		"description": "kick member"
+	},
+	"ban": {
+		"description": "banned member"
+	},
+	"unban": {
+		"description": "unban member"
+	},
+	"random talk": {
+		"description": "mai sending random word"
+	},
+	"random": {
+		"talk": {
+			"description": "random.talk.description"
+		}
+	},
+	"avatar": {
+		"description": "avatar.description"
+	}
+}
