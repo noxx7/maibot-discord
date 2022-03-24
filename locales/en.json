@@ -51,7 +51,7 @@
 		"cantJoinChannel": "tidak bisa memasuki channel: {error}",
 		"queueEnded": "queue musik berakhir",
 		"queueError": "Error: {error}",
-		"startedPlaying": "mulai memainkan **{title}**",
+		"startedPlaying": "mulai memainkan **{title}** {url}",
 		"skipSong": "<@{author}> ⏩ skipped the song",
 		"pauseSong": "<@{author}> ⏸ paused the music.",
 		"resumeSong": "<@{author}> ▶ resumed the music!",
