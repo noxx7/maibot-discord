@@ -17,12 +17,36 @@ const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 
-client.on("ready", () => {
-  console.log(`mai bot online!`);
-  client.user.setActivity(`nox ganteng`, { type: "LISTENING" });
+client.on('ready', () => {
+  console.log("mai bot online!");
+  setInterval(() => {
+      let membersCount = client.guilds.cache.map(guild => guild.memberCount).reduce((a, b) => a + b, 0)
+      client.user.setActivity(`noxx ganteng || ${membersCount} users!`, {type: "LISTENING"});
+  }, 1000 * 60);
+
 });
+
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
+
+client.on('guildMemberAdd', member => {
+  const MemberRole = member.guild.roles.cache.get('720279454227759224');
+  member.roles.add(MemberRole);
+
+  const WelcomeEmbed = new MessageEmbed()
+  .setColor('RANDOM')
+  .setAuthor('WELCOME!', member.user.displayAvatarURL({dynamic: true}))
+  .setDescription(`${member} welcome to **${member.guild.name}** server!\nMember Count: **${member.guild.memberCount}**`)
+  .setFooter(`${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))
+  member.guild.channels.cache.get('949450331052462090').send({embeds: [LogEmbed]});
+
+  const LogEmbed = new MessageEmbed()
+  .setColor("GREEN")
+  .setDescription(`${member} just joined the server!`)
+  .setTimestamp();
+
+  member.guild.channels.cache.get('949450331052462090').send({embeds: {logEmbed}});
+});
 
 
 const commandFiles = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
